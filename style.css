@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: cadetblue;
+}
+.container {
+  border: 1px solid white;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 200px;
+  transition: height 0.2s ease;
+}
+.container.active {
+  height: 450px;
+}
+
+.container.active .qr-image {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.sentence {
+  padding-bottom: 0.7rem;
+  font-size: 16px;
+}
+.link {
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #999;
+}
+.btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.qr-image {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
